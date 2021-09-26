@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    background: black;
+}
+
+/*navigation styling*/
+
+.max_width
+{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    background: crimson;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    /* padding: 30px 0; */
+}
+
+.navbar .sticky
+{
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max_width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a 
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover
+{
+    color: crimson; 
+}
+
+.navbar .logo a:hover
+{
+    color: crimson;
+}
+
+.navbar .logo a span
+{
+    color: gold;
+}
+
+.navbar .logo a:hover span
+{
+    color: white;
+}
+
+.navbar .sticky .menu li a:hover
+{
+    color: white;
+}
+
+.home
+{
+    display: flex;
+    background: url("image1.png") no-repeat right;
+    height: 135vh;
+    width: 100%;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max_width
+{
+    margin: auto 0 auto 40px;
+}
+
+.home .home_content .text-1
+{
+    font-size: 27px;
+    color: gold;
+}
+
+.home .home_content .text-2
+{
+    font-size: 60px;
+    font-weight: 600px;
+    margin-left: -3px;
+}
+
+.home .home_content .text-3
+{
+    font-size: 45px;
+    color: crimson;
+}
+
+.navbar .menu a span
+{
+    color: gold;
+}
+
+.navbar .menu a:hover span
+{
+    color: white;
+}
+
+.contact
+{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    color: gold;
+    min-height: 0px;
+    padding: 100px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact .contact_content .text-4
+{
+    font-size: 20px;
+    color: white;
+}
+
+.contact .contact_content .text-5
+{
+    font-size: 20px;
+    color: white;
+}
+
+.contact .contact_content .text-6
+{
+    font-size: 20px;
+    color: white;
+}
+
+.contact .max_width
+{
+    margin: auto 0 auto 40px;
+}
+
+.contact .title
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    margin-left:550px;
+    font-family: 'Ubuntu';
+}
+
+section
+{
+    padding: 100px 0;
+}
+
+.about
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu';
+}
+
+.about .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: white;
+    margin-bottom: 550px;
+    transform: translateX(-50%);
+}
+
+.about .title::after
+{
+    content: "Who I Am";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    padding: 5px;
+    margin-bottom: 550px;
+    background: black;
+    font-size: 20px;
+    color: crimson;
+    transform: translateX(-50%);
+}
+
+.about .about-content .left img
+{
+    height: 500px;
+    width: 500px;
+    bottom: -20px;
+    object-fit: cover;
+}
+
+.about .about-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left
+{
+    width: 40%;
+}
+
+.about .about-content .right
+{
+    width: 50%;
+}
+
+.skills
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills .title
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 130px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu';
+}
+
+.skills .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: white;
+    margin-bottom: 550px;
+    transform: translateX(-50%);
+}
+
+.skills .title::after
+{
+    content: "What I Know";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    padding: 5px;
+    margin-bottom: 550px;
+    background: black;
+    font-size: 20px;
+    color: crimson;
+    transform: translateX(-50%);
+}
+
+.skills .skills-content .left .text
+{
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:-50px;
+    margin-top: -340px;
+}
+
+.skills .skills-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .left
+{
+    width: 30%;
+}
+
+.skills .skills-content .right
+{
+    width: 50%;
+}
+
+.skills .skills-content .left .img1
+{
+    height: 150px;
+    width: 150px;
+    bottom: -20px;
+    margin-left: -50px;
+    object-fit: cover;
+}
+
+.skills .right
+{
+    font-weight: 500;
+}
+
+.skills .right .bars
+{
+    margin-bottom: 25px;
+    margin-left: 120px;
+}
+
+.skills .right .bars .info
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right .span
+{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: -100px;
+}
+
+.skills .skills-content .right .line
+{
+    height: 5px;
+    width: 320px;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .cpp::before
+{
+    width: 90%;
+}
+
+.skills-content .right .java::before
+{
+    width: 70%;
+}
+
+.skills-content .right .html::before
+{
+    width: 60%;
+}
+
+.skills-content .right .css::before
+{
+    width: 60%;
+}
+
+.skills-content .right .sql::before
+{
+    width: 70%;
+}
